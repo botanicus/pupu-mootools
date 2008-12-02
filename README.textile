@@ -4,6 +4,8 @@ Merb_pupu is a plugin system for merb's public stuff like mootools plugins, icon
 
 h1. About mootools
 
+"MooTools":http://mootools.net is great JavaScript framework
+
 h1. Usage
 
 h2. Layout
@@ -11,4 +13,7 @@ h2. Layout
 <pre>
 # for basic functionality
 plugin :mootools
+
+# for mootools-more
+plugin :mootools, :more => true
 </pre>

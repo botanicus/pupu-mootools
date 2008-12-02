@@ -1,14 +1,8 @@
-# dependencies of the pupu
-#dependencies :mootools
-
 # javascripts for loading
-javascripts "mootools", :in => "lib"
+javascript "mootools-1.2-core"
 
 # parameters of plugin
-# it will be blank in most cases
-#parameter :request, :optional => ["local", "ajax"] do |type|
-#  javascript "lib/autocompleter.#{type}"
-#end
-
-# you can put there message which will be displayed after installation
-#message "foo"
+# pupu :mootools, :more => true
+parameter :request, :more do |boolean|
+  javascript "mootools-1.2-more" if boolean
+end
