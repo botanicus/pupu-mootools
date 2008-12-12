@@ -3,6 +3,6 @@ javascript "mootools-1.2-core"
 
 # parameters of plugin
 # pupu :mootools, :more => true
-parameter :request, :more do |boolean|
+parameter :more do |boolean|
   javascript "mootools-1.2-more" if boolean
 end
